@@ -11,8 +11,6 @@ console.log("Part 1")
 
 
 
-Take an array of strings, and a number and return an array of the strings that are longer than the given number. 
-For example, stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3); would return ["hello", "morning"].
 Take a number, n, and print every number between 1 and n without using loops. Use recursion.
 */
 
@@ -37,9 +35,13 @@ function strArray(arr) {
 const strings = ["Sofa", "Stool", "Chair", "Credenza", "Bed"];
 console.log("Str: ", strArray(strings));
 
+//Take an array of strings, and a number and return an array of the strings that are longer than the given number. 
+//For example, stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3); would return ["hello", "morning"].
 
-
-
+function stringsLongerThan(arr, num) {
+    return arr.filter(str => str.length > num);
+}
+console.log(stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3));
 
 
 //////////--------------------------------part 2 ------------------------------------
